@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>One City Ahead</title>
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, viewport-fit=cover"
+    />
+    <!--
+      The Playables SDK. The platform requires this exact tag, and requires it
+      to come BEFORE any game code (COMPLIANCE.md, Integration 1, checked at
+      publishing). It is the platform's own script, not a third-party service,
+      and it is the only external URL in the whole build (Privacy 2, and
+      LESSONS rule 2 and A3: "no external requests" with no exception written
+      beside it is why Spy Line shipped for weeks without this line). Outside
+      YouTube it runs as a no-op. The module script below is deferred by the
+      browser, so this classic script always runs first.
+    -->
+    <script src="https://www.youtube.com/game_api/v1"></script>
+
+    <!-- No other external tag, ever. -->
+
+    <!-- An empty icon, so the browser does not request /favicon.ico from the
+         host. As Spy Line does; the build must make no request of its own. -->
+    <link rel="icon" href="data:," />
+    <style>
+      /* The real styles live in src/ui/styles.css; this only stops a flash
+         of white before the module loads. */
+      html,
+      body {
+        margin: 0;
+        height: 100%;
+        background: #0b0f14;
+      }
+    </style>
+    <script type="module" crossorigin src="./assets/index-BYAkBL5a.js"></script>
+    <link rel="stylesheet" crossorigin href="./assets/index-xpiFLVlz.css">
+  </head>
+  <body>
+  </body>
+</html>
